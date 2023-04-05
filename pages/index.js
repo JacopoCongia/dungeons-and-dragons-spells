@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Search from "@/components/Search";
 import SpellList from "@/components/SpellList";
+import Navbar from "@/components/Navbar";
 import fetchSpells from "@/fetchSpells";
 
 export default function Home() {
@@ -12,10 +12,12 @@ export default function Home() {
     setSpells(result);
   };
 
+  console.log(spells);
+
   return (
     <>
-      <div className="p-5">
-        <Search onSubmit={handleSubmit} />
+      <Navbar onSubmit={handleSubmit} />
+      <div>
         <SpellList result={spells} />
       </div>
     </>
