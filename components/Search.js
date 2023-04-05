@@ -17,8 +17,9 @@ function Search({ onSubmit }) {
       <form onSubmit={handleSubmit}>
         <input
           onChange={handleChange}
-          className="border-2 p-2 w-[100%]"
+          className="p-2 text-[1.1rem] h-[40px] outline-none"
           value={text}
+          placeholder="Search for spells..."
         />
       </form>
     </div>

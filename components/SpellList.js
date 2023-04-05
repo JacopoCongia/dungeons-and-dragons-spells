@@ -5,15 +5,11 @@ function SpellList({ result }) {
     return (
       <SpellShow
         spell={spell}
-        key={spell.index}
+        key={spell.slug}
       />
     );
   });
-  return (
-    <div className="flex flex-col gap-1 py-1 text-[1.2rem]">
-      {spellElements}
-    </div>
-  );
+  return <div className="flex flex-col text-[1.2rem]">{spellElements}</div>;
 }
 
 export default SpellList;
