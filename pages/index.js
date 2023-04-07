@@ -1,18 +1,9 @@
-import { useState } from "react";
+import useSpells from "@/hooks/use-spells";
 import SpellList from "@/components/SpellList";
 import Navbar from "@/components/Navbar";
-import fetchSpells from "@/fetchSpells";
 
 export default function Home() {
-  const [spells, setSpells] = useState([]);
-
-  const handleSubmit = async (term) => {
-    const result = await fetchSpells(term);
-
-    setSpells(result);
-  };
-
-  console.log(spells);
+  const { spells, handleSubmit } = useSpells();
 
   return (
     <>
