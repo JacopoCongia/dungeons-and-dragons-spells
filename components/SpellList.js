@@ -31,6 +31,7 @@ function SpellList({ result }) {
       {!resultsShow && <SelectedSpell spellCard={spellCard} />}
     </div>
   );
+
 }
 
 export default SpellList;

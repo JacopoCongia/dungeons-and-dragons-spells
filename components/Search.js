@@ -21,6 +21,7 @@ function Search({ onSubmit }) {
         <input
           onChange={handleChange}
           className="p-2 text-zinc-200 text-[1.1rem] h-[40px] rounded-md outline-none bg-zinc-600"
+
           value={text}
           placeholder="Search for spells..."
         />

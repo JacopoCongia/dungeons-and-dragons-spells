@@ -1,6 +1,7 @@
 function SpellShow({ spell, onChange }) {
   const handleClick = () => {
     onChange(spell);
+
   };
 
   return (
@@ -11,6 +12,7 @@ function SpellShow({ spell, onChange }) {
       >
         <h1>{spell.name}</h1>
       </div>
+
     </div>
   );
 }
